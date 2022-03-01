@@ -1,0 +1,30 @@
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDark: hsl(183, 100%, 15%);
+  --darkGrayish: hsl(186, 14%, 43%);
+  --grayishCyan: hsl(184, 14%, 56%);
+  --bgColor: hsl(185, 41%, 84%);
+  --lightCyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color: var(--darkGrayish);
+  font-family: "Space Mono", monospace;
+}

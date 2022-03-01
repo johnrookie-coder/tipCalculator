@@ -1,0 +1,17 @@
+.btn {
+  background-color: var(--strongCyan);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  color: var(--veryDark);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  // margin-top: 1.6rem;
+  min-height: 4.4rem;
+  width: 100%;
+}

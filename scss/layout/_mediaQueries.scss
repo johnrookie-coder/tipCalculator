@@ -1,0 +1,38 @@
+@media (min-width: 50rem) {
+  .main {
+    min-height: 100vh;
+    max-width: 100%;
+
+    &__container {
+      flex-direction: row;
+      gap: 6rem;
+      margin-bottom: 4rem;
+
+      // To make sure contents should NOT look like too stretch
+      max-width: 60%;
+
+      border-radius: 2rem;
+      padding: 2.4rem;
+
+      // Make sure that the direct children of container shares the same width
+      & > * {
+        flex: 1;
+      }
+    }
+  }
+
+  form {
+    .input {
+      &__selection {
+        // Change number of columns from 2 (mobile) to 3 (desktop)
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+
+  .summary {
+    &__value {
+      font-size: 4.4rem;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// Summary
+.summary {
+  background-color: var(--veryDark);
+  border-radius: 1.4rem;
+  padding: 2.4rem;
+
+  color: var(--white);
+  font-size: 1.6rem;
+
+  // Contains two child element: summary__col-1 & summary__col-2 to push btn at the bottom
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // Side by side tip amount and price
+  &__amount,
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 1.8;
+  }
+
+  // Used to increase the amount font-size and color
+  &__value {
+    color: var(--strongCyan);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  span {
+    display: block;
+
+    color: var(--darkGrayish);
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-family: inherit;
+    font-weight: 700;
+  }
+}

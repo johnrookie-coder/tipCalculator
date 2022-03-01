@@ -1,0 +1,247 @@
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDark: hsl(183, 100%, 15%);
+  --darkGrayish: hsl(186, 14%, 43%);
+  --grayishCyan: hsl(184, 14%, 56%);
+  --bgColor: hsl(185, 41%, 84%);
+  --lightCyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--darkGrayish);
+  font-family: "Space Mono", monospace;
+}
+
+.btn {
+  background-color: var(--strongCyan);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--veryDark);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  min-height: 4.4rem;
+  width: 100%;
+}
+
+.summary {
+  background-color: var(--veryDark);
+  border-radius: 1.4rem;
+  padding: 2.4rem;
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.summary__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100%;
+}
+
+.summary__details > :not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.summary__amount, .summary__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.8;
+}
+
+.summary__value {
+  color: var(--strongCyan);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.summary span {
+  display: block;
+  color: var(--darkGrayish);
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.summary p {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+form label,
+form p {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+form .lbl-radio,
+form .custom {
+  background-color: var(--veryDark);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--white);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 4.8rem;
+}
+
+form .input {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+form .input__icon {
+  position: relative;
+  min-height: 3.2rem;
+}
+
+form .input__selection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+form .input .icon {
+  position: absolute;
+  inset: 1.2rem auto auto 1.2rem;
+}
+
+form .input__radio .radio-hidden {
+  display: none;
+}
+
+form .input__radio .custom {
+  display: inline-block;
+  height: 4.8rem;
+}
+
+form input[type="text"] {
+  background-color: var(--lightCyan);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: var(--veryDark);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: right;
+  padding-right: 2rem;
+  min-height: 4rem;
+  width: 100%;
+}
+
+form input[type="radio"]:checked + .lbl-radio {
+  background-color: var(--strongCyan);
+  color: var(--veryDark);
+}
+
+.main {
+  background-color: var(--bgColor);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.2rem;
+  background-color: var(--white);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 3.2rem 2.4rem;
+  max-width: 100%;
+}
+
+.main .logo {
+  margin: 4rem 0;
+}
+
+@media (min-width: 50rem) {
+  .main {
+    min-height: 100vh;
+    max-width: 100%;
+  }
+  .main__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 6rem;
+    margin-bottom: 4rem;
+    max-width: 60%;
+    border-radius: 2rem;
+    padding: 2.4rem;
+  }
+  .main__container > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  form .input__selection {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .summary__value {
+    font-size: 4.4rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

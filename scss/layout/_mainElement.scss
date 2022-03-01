@@ -1,0 +1,26 @@
+// Layout
+.main {
+  background-color: var(--bgColor);
+
+  // Place the whole content to center
+  display: grid;
+  place-items: center;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    background-color: var(--white);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 3.2rem 2.4rem;
+
+    max-width: 100%;
+  }
+
+  .logo {
+    margin: 4rem 0;
+  }
+}

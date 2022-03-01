@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- NEWW -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    </style>
+  </head>
+  <body>
+
+    <main class="main">
+     <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+     </div>
+
+      <div class="main__container">
+        <form action="#">
+            <div class="input">
+              <label for="bill">Bill</label>
+              <div class="input__icon">
+                <input type="text" id="bill" placeholder ="0"/>
+                <span class="icon"><img src="./images/icon-dollar.svg" alt="currency"></span>
+              </div>
+            </div>
+  
+            <div class="input">
+              <p>Select Tip %</p>
+              <div class="input__selection">
+              <div class="input__radio">
+                <input type="radio" name="tip" id="5%" value="5" class="radio-hidden" />
+                <label for="5%" class="lbl-radio">5%</label>
+              </div>
+
+               <div class="input__radio">
+                 <input type="radio" name="tip"  id="10%"  value="10" class="radio-hidden" />
+                 <label for="10%" class="lbl-radio">10%</label>
+               </div>
+
+               <div class="input__radio">
+                 <input type="radio" name="tip"  id="15%"  value="15" class="radio-hidden" />
+                 <label for="15%" class="lbl-radio">15%</label>
+               </div>
+
+               <div class="input__radio">
+                <input type="radio" name="tip"  id="25%" value="25" class="radio-hidden" />
+                <label for="25%" class="lbl-radio">25%</label>
+              </div>
+
+              <div class="input__radio">
+                <input type="radio" name="tip"  id="50%" value="50" 
+                class="radio-hidden" />
+                <label for="50%" class="lbl-radio">50%</label>
+              </div>
+              
+              <div class="input">
+                <input type="text" placeholder="Custom" class="custom" />
+               </div>
+              </div>
+            </div>
+  
+            <div class="input">
+              <label for="people">Number of People</label>
+              <div class="input__icon">
+                <input type="text" id="people" placeholder="0" />
+                <span class="icon"><img src="./images/icon-person.svg" alt="person icon"></span>
+              </div>
+            </div>
+        </form>
+
+        <div class="summary">
+          <div class="summary__details">
+           <div class="summary__col-1">
+              <div class="summary__amount">
+                <p>Tip Amount <span>/ person</span></p>
+                <p class="summary__value">$4.27</p>
+              </div>
+              <div class="summary__total">
+                <p>Total <span>/ person</span></p>
+                <p class="summary__value">$32.79</p>
+              </div>
+           </div>
+
+            <div class="summary__col-2">
+              <button class="btn">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
+  </body>
+</html>
