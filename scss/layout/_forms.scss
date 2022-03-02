@@ -2,11 +2,10 @@
 form {
   label,
   p {
-    display: block;
-    margin-bottom: 8px;
-
     font-size: 1.4rem;
     font-weight: 700;
+
+    margin-bottom: 8px;
   }
 
   // Style for: Label of radio box
@@ -17,7 +16,6 @@ form {
     cursor: pointer;
 
     color: var(--white);
-    // New: To be deleted ff
     font-family: "Space Grotesk", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
@@ -50,7 +48,7 @@ form {
     // Style for: Icon positioning on the input
     .icon {
       position: absolute;
-      inset: 1.2rem auto auto 1.2rem;
+      inset: 1.4rem auto auto 1.4rem;
     }
 
     &__radio {
@@ -68,12 +66,10 @@ form {
   input[type="text"] {
     background-color: var(--lightCyan);
     border: none;
-    // border: 1px solid #000;
     border-radius: 4px;
     outline: none;
 
     color: var(--veryDark);
-    // font-family: inherit;
     font-family: "Space Grotesk", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
@@ -81,7 +77,7 @@ form {
     text-align: right;
 
     padding-right: 2rem;
-    min-height: 4rem;
+    min-height: 4.8rem;
     width: 100%;
   }
 
@@ -89,6 +85,38 @@ form {
     &:checked + .lbl-radio {
       background-color: var(--strongCyan);
       color: var(--veryDark);
+    }
+  }
+}
+
+// VALIDATION --UNDER REFACTORING
+// Change color red later.
+form {
+  label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    // Default: error message is hidden
+    span {
+      display: none;
+    }
+
+    // Validation: add class "err" to span
+    span.err {
+      display: block;
+      color: red;
+    }
+  }
+
+  .user__input {
+    &:focus {
+      border: 2px solid var(--strongCyan);
+    }
+
+    // Add error in the user__input class list
+    &.error {
+      border: 2px solid red;
     }
   }
 }

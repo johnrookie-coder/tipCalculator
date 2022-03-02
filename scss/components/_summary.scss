@@ -30,7 +30,8 @@
   }
 
   // Used to increase the amount font-size and color
-  &__value {
+  &__amountText,
+  &__totalText {
     color: var(--strongCyan);
     font-family: "Space Grotesk", sans-serif;
     font-size: 3.2rem;
@@ -47,7 +48,10 @@
   }
 
   p {
-    font-family: inherit;
     font-weight: 700;
   }
+}
+
+.hidden {
+  display: none;
 }

@@ -19,9 +19,17 @@
         flex: 1;
       }
     }
+
+    .logo {
+      margin: 4rem 0 0;
+    }
   }
 
   form {
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+
     .input {
       &__selection {
         // Change number of columns from 2 (mobile) to 3 (desktop)
