@@ -6,6 +6,7 @@
   --bgColor: hsl(185, 41%, 84%);
   --lightCyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+  --softRed: hsl(0, 93%, 68%);
 }
 
 *,
@@ -111,6 +112,25 @@ body {
   display: none;
 }
 
+form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+form label span {
+  display: none;
+}
+
+form label span.err {
+  display: block;
+  color: var(--softRed);
+}
+
 form label,
 form p {
   font-size: 1.4rem;
@@ -172,6 +192,25 @@ form .input__radio .custom {
   height: 4.8rem;
 }
 
+form .input > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+form .input > p span {
+  display: none;
+}
+
+form .input > p span.err {
+  display: block;
+  color: var(--softRed);
+}
+
 form input[type="text"] {
   background-color: var(--lightCyan);
   border: none;
@@ -189,27 +228,8 @@ form input[type="text"] {
 }
 
 form input[type="radio"]:checked + .lbl-radio {
-  background-color: var(--strongCyan);
+  background-color: var(--bgColor);
   color: var(--veryDark);
-}
-
-form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-form label span {
-  display: none;
-}
-
-form label span.err {
-  display: block;
-  color: red;
 }
 
 form .user__input:focus {
@@ -217,7 +237,7 @@ form .user__input:focus {
 }
 
 form .user__input.error {
-  border: 2px solid red;
+  border: 2px solid var(--softRed);
 }
 
 .main {

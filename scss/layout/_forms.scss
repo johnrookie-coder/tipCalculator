@@ -1,5 +1,22 @@
 // Form
 form {
+  label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    // Default: error message is hidden
+    span {
+      display: none;
+    }
+
+    // Validation: add class "err" to span
+    span.err {
+      display: block;
+      color: var(--softRed);
+    }
+  }
+
   label,
   p {
     font-size: 1.4rem;
@@ -61,6 +78,23 @@ form {
         height: 4.8rem;
       }
     }
+
+    & > p {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      // Default: error message is hidden
+      span {
+        display: none;
+      }
+
+      // Validation: add class "err" to span
+      span.err {
+        display: block;
+        color: var(--softRed);
+      }
+    }
   }
 
   input[type="text"] {
@@ -83,29 +117,8 @@ form {
 
   input[type="radio"] {
     &:checked + .lbl-radio {
-      background-color: var(--strongCyan);
+      background-color: var(--bgColor);
       color: var(--veryDark);
-    }
-  }
-}
-
-// VALIDATION --UNDER REFACTORING
-// Change color red later.
-form {
-  label {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-    // Default: error message is hidden
-    span {
-      display: none;
-    }
-
-    // Validation: add class "err" to span
-    span.err {
-      display: block;
-      color: red;
     }
   }
 
@@ -116,7 +129,7 @@ form {
 
     // Add error in the user__input class list
     &.error {
-      border: 2px solid red;
+      border: 2px solid var(--softRed);
     }
   }
 }
