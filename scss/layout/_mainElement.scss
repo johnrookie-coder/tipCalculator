@@ -3,8 +3,10 @@
   background-color: var(--bgColor);
 
   // Place the whole content to center
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 
   &__container {
