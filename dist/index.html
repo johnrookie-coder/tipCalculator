@@ -17,20 +17,19 @@
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Frontend Mentor | Tip calculator app</title>
+    </style>
   </head>
   <body>
+
     <main class="main">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="logo" />
-      </div>
+     <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+     </div>
 
       <div class="main__container">
         <form action="#" id="form">
@@ -38,100 +37,51 @@
             <div class="input">
               <label for="bill">Bill <span>Can't be zero</span></label>
               <div class="input__icon">
-                <input
-                  type="text"
-                  id="bill"
-                  placeholder="0"
-                  class="user__input bill"
-                />
-                <span class="icon"
-                  ><img src="./images/icon-dollar.svg" alt="currency"
-                /></span>
+                <input type="text" id="bill" placeholder ="0" class="user__input bill" />
+                <span class="icon"><img src="./images/icon-dollar.svg" alt="currency"></span>
               </div>
             </div>
-
+  
             <div class="input">
               <p>Select Tip % <span>Please select tip</span></p>
               <div class="input__selection">
-                <div class="input__radio">
-                  <input
-                    type="radio"
-                    name="tip"
-                    id="5%"
-                    value="5"
-                    class="radio-hidden"
-                  />
-                  <label for="5%" class="lbl-radio">5%</label>
-                </div>
+              <div class="input__radio">
+                <input type="radio" name="tip" id="5%" value="5" class="radio-hidden" />
+                <label for="5%" class="lbl-radio">5%</label>
+              </div>
 
-                <div class="input__radio">
-                  <input
-                    type="radio"
-                    name="tip"
-                    id="10%"
-                    value="10"
-                    class="radio-hidden"
-                  />
-                  <label for="10%" class="lbl-radio">10%</label>
-                </div>
+               <div class="input__radio">
+                 <input type="radio" name="tip"  id="10%"  value="10" class="radio-hidden" />
+                 <label for="10%" class="lbl-radio">10%</label>
+               </div>
 
-                <div class="input__radio">
-                  <input
-                    type="radio"
-                    name="tip"
-                    id="15%"
-                    value="15"
-                    class="radio-hidden"
-                  />
-                  <label for="15%" class="lbl-radio">15%</label>
-                </div>
+               <div class="input__radio">
+                 <input type="radio" name="tip"  id="15%"  value="15" class="radio-hidden" />
+                 <label for="15%" class="lbl-radio">15%</label>
+               </div>
 
-                <div class="input__radio">
-                  <input
-                    type="radio"
-                    name="tip"
-                    id="25%"
-                    value="25"
-                    class="radio-hidden"
-                  />
-                  <label for="25%" class="lbl-radio">25%</label>
-                </div>
+               <div class="input__radio">
+                <input type="radio" name="tip"  id="25%" value="25" class="radio-hidden" />
+                <label for="25%" class="lbl-radio">25%</label>
+              </div>
 
-                <div class="input__radio">
-                  <input
-                    type="radio"
-                    name="tip"
-                    id="50%"
-                    value="50"
-                    class="radio-hidden"
-                  />
-                  <label for="50%" class="lbl-radio">50%</label>
-                </div>
-
-                <div class="input">
-                  <input
-                    type="text"
-                    placeholder="Custom"
-                    class="custom user__input"
-                  />
-                </div>
+              <div class="input__radio">
+                <input type="radio" name="tip"  id="50%" value="50" 
+                class="radio-hidden" />
+                <label for="50%" class="lbl-radio">50%</label>
+              </div>
+              
+              <div class="input">
+                <input type="text" placeholder="Custom" class="custom user__input"  />
+               </div>
               </div>
             </div>
-
+  
             <div class="input">
-              <label for="people"
-                >Number of people <span>Can't be zero</span></label
-              >
+              <label for="people">Number of people <span>Can't be zero</span></label>
               <div class="input__icon">
-                <input
-                  type="text"
-                  id="people"
-                  placeholder="0"
-                  class="user__input people"
-                />
-                <span class="icon"
-                  ><img src="./images/icon-person.svg" alt="person icon"
-                /></span>
+                <input type="text" id="people" placeholder="0" class="user__input people" />
+                <span class="icon"><img src="./images/icon-person.svg" alt="person icon"></span>
               </div>
             </div>
             <button class="hidden">Submit</button>
@@ -140,7 +90,7 @@
 
         <div class="summary">
           <div class="summary__details">
-            <div class="summary__col-1">
+           <div class="summary__col-1">
               <div class="summary__amount">
                 <p>Tip Amount <span>/ person</span></p>
                 <p class="summary__amountText">$0.00</p>
@@ -149,17 +99,17 @@
                 <p>Total <span>/ person</span></p>
                 <p class="summary__totalText">$0.00</p>
               </div>
-            </div>
+           </div>
 
             <div class="summary__col-2">
               <button class="btn">Reset</button>
             </div>
           </div>
-        </div>
+      </div>
       </div>
     </main>
 
     <!-- JS FILE -->
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
   </body>
 </html>
