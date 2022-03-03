@@ -268,7 +268,31 @@ form .user__input.error {
   margin: 4rem 0;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 500px) {
+  .main {
+    max-width: 100%;
+  }
+  .main__container {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: auto;
+    max-width: 100%;
+  }
+  .main__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 4rem 0;
+    border-radius: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
   .main {
     min-height: 100vh;
     max-width: 100%;
@@ -279,7 +303,7 @@ form .user__input.error {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 6rem;
-    margin-bottom: 4rem;
+    margin: 0;
     max-width: 60%;
     border-radius: 2rem;
     padding: 2.4rem;
